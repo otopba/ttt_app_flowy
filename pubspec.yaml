@@ -1,0 +1,50 @@
+name: ttt_app_flowy
+description: Tic-Tac-Toe AppFlowy Interview
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  flutter_bloc: ^8.1.2
+  built_value: ^8.4.4
+  built_collection: ^5.1.1
+  intl: ^0.17.0
+  flutter_screenutil: ^5.7.0
+  get_it: ^7.3.0
+  ttt_engine:
+    path: ttt_engine
+  collection: ^1.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  build_runner: ^2.3.3
+  built_value_generator: ^8.4.4
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+flutter_icons:
+  image_path: "icons/app_icon.png"
+  adaptive_icon_background: "icons/app_icon_background.png"
+  adaptive_icon_foreground: "icons/app_icon_foreground.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "icons/app_icon.png"
+    background_color: "#57BAAC"
+    theme_color: "#F1EBD5"
