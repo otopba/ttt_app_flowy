@@ -12,6 +12,8 @@ class TTTApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
+      // https://github.com/flutter/flutter/issues/126585
+      useInheritedMediaQuery: true,
       scaleByHeight: kIsWeb,
       builder: (context, child) {
         return MaterialApp(

@@ -4,7 +4,7 @@ publish_to: none
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: '>=2.19.6 <4.0.0'
 
 dependencies:
   flutter:
@@ -13,14 +13,16 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.5
   flutter_bloc: ^8.1.2
-  built_value: ^8.4.4
+  built_value: ^8.5.0
   built_collection: ^5.1.1
-  intl: ^0.17.0
-  flutter_screenutil: ^5.7.0
-  get_it: ^7.3.0
+  # Because ttt_app_flowy depends on flutter_localizations from sdk which depends on intl 0.18.0
+  intl: ^0.18.0
+  flutter_screenutil: ^5.8.1
+  get_it: ^7.6.0
   ttt_engine:
     path: ttt_engine
-  collection: ^1.17.0
+  # Because every version of integration_test from sdk depends on collection 1.17.1
+  collection: ^1.17.1
 
 dev_dependencies:
   flutter_test:
@@ -28,8 +30,8 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   flutter_lints: ^2.0.1
-  build_runner: ^2.3.3
-  built_value_generator: ^8.4.4
+  build_runner: ^2.4.4
+  built_value_generator: ^8.5.0
   flutter_launcher_icons: ^0.13.1
 
 flutter:
